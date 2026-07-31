@@ -13,7 +13,7 @@ print(name,age,place,sep='------->')
 '''
 '''
 #a,b = 2,3,5 # this statment generates a value error where there are too many values to unpack
-
+'''
 #Reassingning variables
 
 name = 'Gayathri'
@@ -21,7 +21,7 @@ a,b = 45,1.5
 print(a,b)
 a,b = b,a#this is the swapping is called reassingning 
 print(a,b,sep=',')
-
+'''
 #a,b = b,c #nameerror as c is not defined
 #print(a,b)
 
@@ -149,6 +149,7 @@ print(f)
 g =float(bool(int(10)))
 print(g)
 '''
+'''
 f = 45 + 2.5 + 2 + 3j + False
 print(f)
 
@@ -157,7 +158,7 @@ print(h)
 
 j = 65 - 76 - 10j - 12 - False
 print(j)
-
+'''
 
 
 
