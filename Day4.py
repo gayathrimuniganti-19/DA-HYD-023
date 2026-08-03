@@ -32,7 +32,7 @@ print(5 and 3)# here and is the logical operator checks for both existances
 #returns 5 in above case
 print(5 or 3) # returns 3 in this case
 
-#Leftshit Operator <<, Rightshift Operators >>
+#Leftshift Operator <<, Rightshift Operators >>
 print(5<1)# False Comparision
 print(5<<1)#Leftshift operation by 1 position
 print(5>>1)#Rightshif operation
