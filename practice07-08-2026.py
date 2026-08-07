@@ -1,4 +1,11 @@
 '''
+movies = input("Enter movie names:").split(',')
+count = 1
+for movie in movies:
+print(count, movie)
+count += 1
+'''
+'''
 #07-08-2026
 #Write a program to calculate the inings ofa bats man,count of the boundaries,dot balls and total socre. using For loop
 score = int(input("Enter the number of balls:"))
@@ -39,7 +46,6 @@ while current_attempt < max_attempts:
         current_attempt += 1
 else:
     print("Entered pin is invalid...Try again after 30 secounds...")
-        
 '''
 # ATM pin auethentication
 pin = "1979"
