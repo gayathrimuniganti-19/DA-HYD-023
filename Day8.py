@@ -50,6 +50,7 @@ print(name[-2:])
 print(name[1:-2])
 print(name[2:-6])#returns an empty str
 '''
+'''
 #Task
 #observe +ve, +ve, -ve, -ve, & +ve,-ve all possibilities
 
@@ -121,7 +122,7 @@ print(d)
 #Task : A B S D E F G H I J K L M N O P Q R S T U V W X Y Z
 #use loops and strings to return A-Z
 
-'''
+
 
 
 
