@@ -16,22 +16,24 @@ print("Final marks:", marks)
 print("Number of marks:",len(marks))
 ------
 #Number List Analyser
-numbers = [20,10,30,20,40,20]
+numbers = [20, 10, 30, 20, 40, 20]
 numbers.sort()
 print("Ascending:", numbers)
 numbers.reverse()
 print("Descending:", numbers)
-search = int(input("Enter number to search:"))
+print("Numbers:")
+for n in numbers:
+    print(n)
+search = int(input("Enter number to search: "))
 if search in numbers:
-    print('count:',numbers.count(search))
-    print('First index:',numbers.index(search))
+    print("Number found")
+    print("Count:", numbers.count(search))
+    print("First index:", numbers.index(search))
 else:
     print("Number not found")
-print("Smallest value:",min(numbers))
-print("Largest value:",max(numbers))
-print("Total no.of numbers:",sum(numbers))
------
-#Even and Odd Number Separator
+print("Smallest:", min(numbers))
+print("Largest:", max(numbers))
+print("Total:", sum(numbers))
 num = [5,10,15,20,25,30,35,40]
 even=[]
 odd=[]
@@ -66,17 +68,26 @@ for name in unique_names:
 ------
 '''
 #Course Student Comparison
-python_students = {'Asha','Rahul','John','Meera'}
-da_students = {'Rahul','Meera','Arun'}
-print('both courses:',python_students | da_students)
-print('both courses students:',python_students & da_students)
-print('only python:', python_students - da_students)
-print('only one course:', python_students ^ da_students)
-print('DA subset of python:',da_students.issubset(python_students))
-print('python superset of DA:', python_students.issuperset(da_students))
-print('Disjoint:', python_students.isdisjoint(da_students))
-print('common students:')
-for student in python_students & da_students:
+python_students = {"Asha", "Rahul", "John", "Meera"}
+da_students = {"Rahul", "Meera", "Arun"}
+print("Union:", python_students.union(da_students))
+print("Intersection:", python_students.intersection(da_students))
+print("Only Python:", python_students.difference(da_students))
+print("Only one course:", python_students.symmetric_difference(da_students))
+if da_students.issubset(python_students):
+    print("DA is a subset of Python")
+else:
+    print("DA is not a subset of Python")
+if python_students.issuperset(da_students):
+    print("Python is a superset of DA")
+else:
+    print("Python is not a superset of DA")
+if python_students.isdisjoint(da_students):
+    print("Students are disjoint")
+else:
+    print("Students are not disjoint")
+print("Students learning both:")
+for student in python_students.intersection(da_students):
     print(student)
 
 
